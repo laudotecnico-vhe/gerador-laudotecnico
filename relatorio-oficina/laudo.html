@@ -13,314 +13,140 @@
       type="image/x-icon"
     />
   </head>
-<style>
+  <style>
     @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Product Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
     @import url("https://fonts.cdnfonts.com/css/product-sans");
-    
-    
-    body {
+
+    body{
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-family: "Product Sans", sans-serif;
       font-weight: 600;
     }
 
-
-    /* Tablets em modo retrato */
     @media only screen and (max-width: 768px) {
-      body {
+      body{
         background-color: #f6f6f6;
-        padding: 30px 7%;
       }
-
-      /* o laudo */
-      .container_laudo {
+      .folha{
         width: 400px;
-        padding-top: 1vh;
-      }
-
-      .laudo_header {
-        height: auto;
-      }
-
-      .logo-oficina {
-        padding: 3vh 3vh;
-        max-width: 15%;
-      }
-
-      .logo {
-        width: 10vh;
-      }
-
-      .info-responsavel {
-        width: 85%;
-        padding-right: 3vh;
-        height: 40px;
-      }
-
-      .info-responsavel .fonte-normal {
-        font-size: 5px;
+        padding: 5vh;
+        gap: 2vh;
       }
 
       .fonte-bold {
-        font-size: 7px;
-      }
-
-      .laudo_titulo {
-        padding: 1vh 5vh 1vh 3vh;
-      }
-
-      .laudo_titulo .fonte-bold {
-        font-size: 13px;
-      }
-
-      .laudo_titulo .fonte-normal {
-        font-size: 7px;
-      }
-
-      .texto_container {
-        padding: 0vh 3vh 3vh 3vh;
-      }
-
-      .dados1 {
-        width: 40%;
-      }
-
-      .descricao1 {
-        width: 60%;
-      }
-
-      .descricao1 .fonte-bold {
-        font-size: 12px;
-      }
-
-      .descricao1,
-      .fonte-normal {
-        font-size: px;
-      }
-
-      .dados1 .fonte-bold {
-        font-size: 12px;
-      }
-
-      .dados1,
-      .fonte-normal {
-        font-size: 7px;
-      }
-
-      .preparacao_testes {
-        gap: 5%;
-      }
-
-      .preparacao {
-        width: 45%;
-      }
-
-      .testes {
-        width: 50%;
-      }
-
-      .preparacao .fonte-bold {
-        font-size: 12px;
-      }
-
-      .preparacao .fonte-normal {
-        font-size: 7px;
-      }
-
-      .testes .fonte-bold {
-        font-size: 12px;
-      }
-
-      .testes .fonte-normal {
-        font-size: 7px;
-      }
-
-      .procedimento .fonte-bold {
-        font-size: 12px;
-      }
-
-      .procedimento .fonte-normal {
-        font-size: 7px;
-      }
-
-      .footer {
-        padding-top: 1vh;
-        padding-bottom: 1vh;
-      }
-
-      .logos {
-        gap: 3vh;
-      }
-
-      .footer .logo_oficina {
-        width: 6vh;
-      }
-
-      .footer .logo_vhe {
-        width: 6vh;
-      }
-
-      .infos {
-        gap: 3px;
-      }
-
-      .info {
-        gap: 2px;
-      }
-
-      .info .fonte-normal {
-        font-size: 5px;
-      }
-
-      .info .icone {
-        width: 5px;
-      }
-
-      .bem-vindo {
-        height: 70px;
-        border-radius: 20px;
-        margin-top: 10px;
-      }
-
-      .bem-vindo-padding {
-        padding: 3vh;
-      }
-
-      .sub-titulo {
-        font-family: "Product Sans";
-        font-size: 10px;
-      }
-
-      .titulo {
-        font-size: 13px;
-      }
-    }
-
-    /* Tablets em modo paisagem */
-    @media only screen and (min-width: 769px) and (max-width: 1024px) {
-      body {
-        background-color: #582727;
-        padding: 50px 10%;
-      }
-
-      /* o laudo */
-      .container_laudo {
-        width: 600px;
-        padding-top: 3vh;
-      }
-
-      .laudo_header {
-        height: auto;
-      }
-
-      .logo-oficina {
-        padding: 5vh 8vh;
-        max-width: 15%;
-      }
-
-      .logo {
-        width: 20vh;
-      }
-
-      .info-responsavel {
-        width: 85%;
-        padding-right: 10vh;
-        height: 70px;
-      }
-
-      .gap {
-        gap: 2px;
-      }
-
-      .info-responsavel .fonte-normal {
         font-size: 8px;
       }
 
-      .fonte-bold {
+      .fonte-normal{
+        font-size: 6px;
+      }
+
+      .titulo .fonte-bold {
+        font-size: 16px;
+      }
+
+      .titulo .fonte-normal{
+        font-size: 8px;
+      }
+
+      .secao1 .fonte-bold {
         font-size: 12px;
       }
 
-      .laudo_titulo {
-        padding: 2vh 5vh 3vh 8vh;
+      .secao2 .fonte-bold {
+        font-size: 12px;
       }
 
-      .laudo_titulo .fonte-bold {
-        font-size: 25px;
+      .secao3 .fonte-bold {
+        font-size: 12px;
       }
 
-      .laudo_titulo .fonte-normal {
+
+      .logo {
+        width: 8vh;
+      }
+
+      .footer{
+        gap: 1vh;
+      }
+
+      .footer .logo_oficina {
+        width: 6vh;
+      }
+
+      .footer .logo_vhe {
+        width: 6vh;
+      }
+
+      .info .icone {
+        width: 4px;
+      }
+
+      .superior{
+        gap: 1vh;
+      }
+  
+      .inferior{
+       gap: 1vh;
+      }
+
+      .logos{
+        gap: 3vh;
+        height: 20px;
+      }
+
+      .fonte-normal1 {
+        font-size: 8px;
+      }
+  
+
+    }
+
+    @media only screen and (min-width: 769px) and (max-width: 1024px) {
+      body{
+        background-color: #f6f6f6;
+      }
+      .folha{
+        width: 600px;
+        padding: 10vh;
+        gap: 5vh;
+      }
+
+      .fonte-bold {
+        font-size: 14px;
+      }
+
+      .fonte-normal{
         font-size: 10px;
       }
 
-      .texto_container {
-        padding: 0vh 8vh 3vh 8vh;
+      .titulo .fonte-bold {
+        font-size: 30px;
       }
 
-      .dados1 {
-        width: 40%;
+      .titulo .fonte-normal{
+        font-size: 16px;
       }
 
-      .descricao1 {
-        width: 60%;
+      .secao1 .fonte-bold {
+        font-size: 20px;
       }
 
-      .descricao1 .fonte-bold {
-        font-size: 18px;
+      .secao2 .fonte-bold {
+        font-size: 20px;
       }
 
-      .descricao1 .fonte-normal {
-        font-size: 10px;
+      .secao3 .fonte-bold {
+        font-size: 20px;
       }
 
-      .dados1 .fonte-bold {
-        font-size: 18px;
+      .logo {
+        width: 15vh;
       }
 
-      .dados1 .fonte-normal {
-        font-size: 10px;
-      }
-
-      .preparacao_testes {
-        gap: 5%;
-      }
-
-      .preparacao {
-        width: 45%;
-      }
-
-      .testes {
-        width: 50%;
-      }
-
-      .preparacao .fonte-bold {
-        font-size: 18px;
-      }
-
-      .preparacao .fonte-normal {
-        font-size: 10px;
-      }
-
-      .testes .fonte-bold {
-        font-size: 18px;
-      }
-
-      .testes .fonte-normal {
-        font-size: 10px;
-      }
-
-      .procedimento .fonte-bold {
-        font-size: 18px;
-      }
-
-      .procedimento .fonte-normal {
-        font-size: 10px;
-      }
-
-      .footer {
-        padding-top: 3vh;
-        padding-bottom: 5vh;
-      }
-
-      .logos {
+      .footer{
         gap: 3vh;
       }
 
@@ -330,176 +156,90 @@
 
       .footer .logo_vhe {
         width: 12vh;
-      }
-
-      .infos {
-        gap: 10px;
-      }
-
-      .info {
-        gap: 5px;
-      }
-
-      .info .fonte-normal {
-        font-size: 9px;
       }
 
       .info .icone {
         width: 10px;
       }
 
-      .bem-vindo {
-        height: 110px;
-        border-radius: 30px;
-        margin-top: 30px;
-        width: 140vh
+      .superior{
+        gap: 2vh;
+      }
+  
+      .inferior{
+       gap: 2vh;
+      }
+      
+      .infos{
+        gap: 1vh;
       }
 
-      .bem-vindo-padding {
-        padding: 8vh;
+      .logos{
+        gap: 5vh;
+        height: 50px;
       }
 
-      .sub-titulo {
-        font-family: "Product Sans";
-        font-size: 12px;
+      .fonte-normal1 {
+        font-size: 16px;
       }
-
-      .titulo {
-        font-size: 21px;
-      }
-    }
-
-    /* Desktops e laptops */
-    @media only screen and (min-width: 1025px) {
   
 
-      body {
+    }
+
+    @media only screen and (min-width: 1025px) {
+      body{
         background-color: #f6f6f6;
-        padding: 1px 10%;
       }
-
-      /* o laudo */
-      .container_laudo {
+      .folha{
         width: 1000px;
-        padding-top: 5vh;
-      }
-      .laudo_header {
-        height: auto;
-      }
-
-      .logo-oficina {
-        padding: 5vh 12vh;
-        max-width: 15%;
-      }
-
-      .logo {
-        width: 25vh;
-      }
-
-      .info-responsavel {
-        width: 85%;
-        padding: 5vh 14vh 1vh 12vh;
-        height: 65px;
-      }
-
-      .gap {
-        gap: 3px;
-      }
-
-      .info-responsavel .fonte-normal {
-        font-size: 15px;
+        padding: 10vh;
+        gap: 5vh;
       }
 
       .fonte-bold {
         font-size: 18px;
       }
 
-      .laudo_titulo {
-        padding: 5vh 12vh 4vh 12vh;
+      .fonte-normal{
+        font-size: 15px;
       }
 
-      .laudo_titulo .fonte-bold {
+      .titulo .fonte-bold {
         font-size: 40px;
       }
 
-      .laudo_titulo .fonte-normal {
-        font-size: 18px;
+      .titulo .fonte-normal{
+        font-size: 20px;
       }
 
-      .texto_container {
-        padding: 0vh 12vh 3vh 12vh;
+      .secao1 .fonte-bold {
+        font-size: 30px;
       }
 
-      .dados1 {
-        width: 40%;
+      .secao2 .fonte-bold {
+        font-size: 30px;
       }
 
-      .descricao1 {
-        width: 60%;
+      .secao3 .fonte-bold {
+        font-size: 30px;
       }
 
-      .descricao1 .fonte-bold {
-        font-size: 25px;
-      }
-
-      .descricao1 .fonte-normal {
-        font-size: 18px;
-      }
-
-      .dados1 .fonte-bold {
-        font-size: 25px;
-      }
-
-      .dados1 .fonte-normal {
-        font-size: 18px;
-      }
-
-      .preparacao_testes {
-        gap: 5%;
-      }
-
-      .preparacao {
-        width: 45%;
-      }
-
-      .testes {
-        width: 50%;
-      }
-
-      .preparacao .fonte-bold {
-        font-size: 25px;
-      }
-
-      .preparacao,
-      .fonte-normal {
-        font-size: 18px;
-      }
-
-      .testes .fonte-bold {
-        font-size: 25px;
-      }
-
-      .testes,
-      .fonte-normal {
-        font-size: 18px;
-      }
-
-      .procedimento .fonte-bold {
-        font-size: 25px;
-      }
-
-      .procedimento,
-      .fonte-normal {
-        font-size: 18px;
-      }
-
-      .footer {
-        padding-top: 3vh;
-        padding-bottom: 10vh;
-      }
-
-      .logos {
+      .footer{
         gap: 5vh;
+      }
+
+      .infos{
+        gap: 2vh;
+      }
+
+
+      .logo {
+        width: 20vh;
+      }
+
+      .logos{
+        gap: 5vh;
+        height: 70px;
       }
 
       .footer .logo_oficina {
@@ -510,62 +250,61 @@
         width: 15vh;
       }
 
-      .infos {
-        gap: 10px;
-      }
-
-      .info {
-        gap: 5px;
-      }
-
-      .info .fonte-normal {
-        font-size: 12px;
-      }
-
       .info .icone {
         width: 15px;
       }
 
-      .bem-vindo {
-        height: 130px;
-        border-radius: 30px;
-        margin-top: 50px;
-        width: 140vh
+      .superior{
+        gap: 5vh;
       }
-
-      .bem-vindo-padding {
-        padding: 10vh;
+  
+      .inferior{
+       gap: 5vh;
       }
-
-      .sub-titulo {
-        font-family: "Product Sans";
-        font-size: 15px;
-      }
-
-      .titulo {
-        font-size: 27px;
-      }
-
       
+      .fonte-normal1 {
+        font-size: 20px;
+      }
+  
+    }
+
+    .folha{
+      background-color: #fcfcfc;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .fonte-normal {
+      font-weight: 400;
+      color: #484745;
+      text-align: justify;
     }
 
 
-    /* Fim inputs */
-    .container_laudo {
-      height: auto;
-      background-color: #fcfcfc;
+    .fonte-normal1 {
+      font-weight: 400;
+      color: #484745;
+      text-align: justify;
+    }
+
+    .fonte-bold {
+      font-weight: 700;
+      color: #484745;
+      text-align: left;
     }
 
     .laudo_header {
       width: 100%;
       display: flex;
+      height: auto;
+      justify-content: space-between;
     }
 
     .logo-oficina {
       display: flex;
       align-items: start;
       justify-content: start;
-      height: auto;
     }
 
     .info-responsavel {
@@ -581,285 +320,265 @@
       flex-direction: column;
     }
 
-    .fonte-normal {
-      font-weight: 400;
-      color: #484745;
-      text-align: justify;
-    }
-
-    .fonte-bold {
-      font-weight: 700;
-      color: #484745;
-      text-align: left;
-    }
-
-    .laudo_titulo {
+    .titulo{
+      width: 100%;
       display: flex;
       flex-direction: column;
-      width: 50%;
-    }
-
-    .dados_descricao {
-      display: flex;
-      width: 100%;
       height: auto;
     }
 
-    .dados1 {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .descricao1 {
-      display: flex;
-      flex-direction: column;
-      text-align: justify;
-    }
-
-    .preparacao_testes {
+    .secao1{
       width: 100%;
       display: flex;
+      height: auto;
     }
 
-    .preparacao {
+    .dados{
+      width: 45%;
       display: flex;
+      height: auto;
       flex-direction: column;
-      text-align: justify;
+      word-wrap: break-word;
     }
 
-    .testes {
+    .descricao{
+      width: 50%;
       display: flex;
+      height: auto;
       flex-direction: column;
-      text-align: justify;
+      word-wrap: break-word;
     }
 
-    .procedimento {
+    .secao2{
       width: 100%;
       display: flex;
-      flex-direction: column;
-      text-align: justify;
+      height: auto;
+      gap: 5vh;
     }
 
-    .footer {
+    .preparacao{
+      width: 45%;
+      display: flex;
+      height: auto;
+      flex-direction: column;
+      word-wrap: break-word;
+    }
+
+    .testes{
+      width: 45%;
+      display: flex;
+      height: auto;
+      flex-direction: column;
+      word-wrap: break-word;
+    }
+
+    .secao3{
       width: 100%;
       display: flex;
-      align-items: center;
-      justify-content: space-between;
+      height: auto;
     }
 
-    .logos {
+    .procedimento{
+      width: 100%;
       display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .infos {
-      display: flex;
+      height: auto;
       flex-direction: column;
-      color: #484745;
-    }
-
-    .superior {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 2vh;
-    }
-
-    .info {
-      display: flex;
-      align-items: center;
-    }
-
-    .logo{
-      max-width: 15vh;
+      word-wrap: break-word;
     }
 
     .footer{
-    gap: 5vh;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
-    
+    .logos{
+      display: flex;
+      width: 40%;
+    }
+
+    .infos{
+      display: flex;
+      flex-direction: column;
+      width: auto;
+    }
+
+    .superior{
+      display: flex;
+    }
+
+    .inferior{
+      display: flex;
+    }
+
   </style>
 
- <body>
-  <div style="display: flex; width: 100%; align-items: center; justify-content: center; padding-left: 0.5vh; padding-right: 4vh;">
-    <section class="container_laudo" id="conteudo">
+  <body>
+    <div class="folha"  id="conteudo">
+
       <div class="laudo_header">
         <div class="logo-oficina">
-          <img id="laudo_img_logo1" class="logo" src="" alt="logo" />
+          <img id="laudo_img_logo1" class="logo" src="./logo oficina.svg" alt="logo" />
         </div>
+
         <div class="info-responsavel">
           <div class="gap">
-            <span class="fonte-bold" style="color: #cccccc"
-              >Dados do Responsável</span
-            >
+            <span class="fonte-bold" style="color: #cccccc">Dados do Responsável</span>
             <span class="fonte-normal" id="laudo_oficina">Oficina:</span>
             <span class="fonte-normal" id="laudo_tecnico">Técnico:</span>
           </div>
         </div>
       </div>
 
-      <div class="laudo_titulo">
+      <div class="titulo">
         <span class="fonte-bold">Laudo Técnico</span>
         <span class="fonte-normal">Veículo Híbrido e Elétrico</span>
       </div>
 
-      <div class="texto_container">
-        <div class="dados_descricao">
-          <div class="dados1">
-            <span class="fonte-bold">Dados do Veículo</span>
-            <span class="fonte-normal" id="laudo_modelo"></span>
-            <span class="fonte-normal" id="laudo_tipo"></span>
-            <span class="fonte-normal" id="laudo_tensao" ></span>
-            <span class="fonte-normal" id="laudo_capacidade"></span>
-          </div>
+      <div class="secao1">
+        <div class="dados">
+          <span class="fonte-bold">Dados do Veículo</span>
+            <span class="fonte-normal1" id="laudo_modelo"></span>
+            <span class="fonte-normal1" id="laudo_tipo"></span>
+            <span class="fonte-normal1" id="laudo_tensao" ></span>
+            <span class="fonte-normal1" id="laudo_capacidade"></span>
+        </div>
 
-          <div class="descricao1">
-            <span class="fonte-bold">Descrição</span>
-            <span id="laudo_descrição" class="fonte-normal"
-              ></span
-            >
-          </div>
+        <div class="descricao">
+          <span class="fonte-bold">Descrição</span>
+          <span id="laudo_descrição" class="fonte-normal"></span>
         </div>
       </div>
 
-      <div class="texto_container">
-        <div class="preparacao_testes">
-          <div class="preparacao">
-            <span class="fonte-bold">Preparação do Veículo</span>
-            <span id="laudo_preparacao" class="fonte-normal"
-              ></span
-            ><br>
-            <img style="max-width: 80%;" id="laudo_img_preparacao" src="" alt="">
-          </div>
+      <div class="secao2">
+        <div class="preparacao">
+          <span class="fonte-bold">Preparação do Veículo</span>
+          <span id="laudo_preparacao" class="fonte-normal"></span><br>
+          <img style="max-width: 80%;" id="laudo_img_preparacao" src="" alt="">
+        </div>
 
-          <div class="testes">
-            <span class="fonte-bold">Testes Preliminares</span>
-            <span id="laudo_teste" class="fonte-normal"></span><br>
-            <img style="max-width: 74%;" id="laudo_img_teste" src="" alt="">
-          </div>
+
+        <div class="testes">
+          <span class="fonte-bold">Testes Preliminares</span>
+          <span id="laudo_teste" class="fonte-normal"></span><br>
+          <img style="max-width: 74%;" id="laudo_img_teste" src="" alt="">
         </div>
       </div>
 
-      <div class="texto_container">
+      <div class="secao3">
         <div class="procedimento">
           <span class="fonte-bold">Procedimento</span>
-          <span id="laudo_procedimento" class="fonte-normal"
-            ></span
-          >
+          <span id="laudo_procedimento" class="fonte-normal"></span>
           <img style="max-width: 40%; margin-top: 1vh;" id="laudo_img_procedimento" src="" alt="">
         </div>
       </div>
-
-      <div class="texto_container">
+      
+      <div class="secao3">
         <div class="procedimento">
-          <span class="fonte-bold">Conclusão</span>
-          <span id="laudo_conclusao" class="fonte-normal"
-            ></span
-          >
-          <img style="max-width: 40%; margin-top: 1vh;" id="laudo_img_conclusao" src="" alt="">
+          <div class="procedimento">
+            <span class="fonte-bold">Conclusão</span>
+            <span id="laudo_conclusao" class="fonte-normal" ></span>
+            <img style="max-width: 40%; margin-top: 1vh;" id="laudo_img_conclusao" src="" alt="">
+          </div>
         </div>
       </div>
 
-      <div class="texto_container">
-        <div class="footer">
-          <div class="logos">
-            <img id="laudo_img_logo2" class="logo_oficina" src="" alt="" />
-            <img class="logo_vhe" src="./vhe.svg" alt="" />
-          </div>
+      <div class="footer">
+        <div class="logos">
+          <img id="laudo_img_logo2" class="logo_oficina"  src="" alt="" />
+          <img class="logo_vhe" src="./vhe.svg" alt="" />
+        </div>
 
-          <div class="infos">
-            <div class="superior">
-              <div class="info">
-                <img class="icone" src="./whatsapp.svg" alt="" />
-                <span id="laudo_whatsapp" class="fonte-normal"></span>
-              </div>
-
-              <div class="info">
-                <img class="icone" src="./telefone.svg" alt="" />
-                <span id="laudo_telefone" class="fonte-normal"></span>
-              </div>
-
-              <div class="info">
-                <img class="icone" src="./mail.svg" alt="" />
-                <span id="laudo_email" class="fonte-normal"></span>
-              </div>
+        <div class="infos">
+          <div class="superior">
+            <div class="info">
+              <img class="icone" src="./whatsapp.svg" alt="" />
+              <span id="laudo_whatsapp" class="fonte-normal"></span>
             </div>
 
-            <div class="inferior">
-              <div class="info">
-                <img class="icone" src="./pin.svg" alt="" />
-                <span id="laudo_endereco" class="fonte-normal"
-                  ></span
-                >
-              </div>
+            <div class="info">
+              <img class="icone" src="./telefone.svg" alt="" />
+              <span id="laudo_telefone" class="fonte-normal"></span>
+            </div>
+
+            <div class="info">
+              <img class="icone" src="./mail.svg" alt="" />
+              <span id="laudo_email" class="fonte-normal"></span>
+            </div>
+          </div>
+
+          <div class="inferior">
+            <div class="info">
+              <img class="icone" src="./pin.svg" alt="" />
+              <span id="laudo_endereco" class="fonte-normal"
+                ></span
+              >
             </div>
           </div>
         </div>
       </div>
-    </section>
-  </div>
 
+
+    </div>
   </body> 
 </html>
 
 <script>
- // Recupera os dados do localStorage
-const dados = JSON.parse(localStorage.getItem('dadosLaudo'));
-
-if (dados) {
-  document.getElementById('laudo_oficina').textContent = `Oficina: ${dados.nomeOficina}`;
-  document.getElementById('laudo_tecnico').textContent = `Técnico: ${dados.nomeTecnico}`;
-  document.getElementById('laudo_modelo').textContent = `Modelo: ${dados.modeloVeiculo}`;
-  document.getElementById('laudo_tipo').textContent = `Tipo: ${dados.tipoVeiculo}`;
-  document.getElementById('laudo_tensao').textContent = `Tensão: ${dados.tensao}`;
-  document.getElementById('laudo_capacidade').textContent = `Capacidade: ${dados.capacidade}`;
-  document.getElementById('laudo_descrição').textContent = dados.descricao;
-  document.getElementById('laudo_preparacao').textContent = dados.preparacao;
-  document.getElementById('laudo_teste').textContent = dados.teste;
-  document.getElementById('laudo_procedimento').textContent = dados.procedimentos;
-  document.getElementById('laudo_conclusao').textContent = dados.conclusao;
-  document.getElementById('laudo_whatsapp').textContent = `${dados.whatsapp}`;
-  document.getElementById('laudo_telefone').textContent = `${dados.telefone}`;
-  document.getElementById('laudo_email').textContent = `${dados.email}`;
-
-  // Incluindo os dados do endereço
-  document.getElementById('laudo_endereco').textContent = `${dados.endereco.rua}, ${dados.endereco.numero} - ${dados.endereco.cidade}, ${dados.endereco.estado}`;
-
-  // Define as imagens
-  document.getElementById('laudo_img_logo1').src = dados.logoOficina || ''; // Se não houver imagem, deixa em branco
-  document.getElementById('laudo_img_logo2').src = dados.logoOficina || ''; // Se não houver imagem, deixa em branco
-  document.getElementById('laudo_img_preparacao').src = dados.imgPreparacao || ''; // Se não houver imagem, deixa em branco
-  document.getElementById('laudo_img_teste').src = dados.imgTeste || ''; // Se não houver imagem, deixa em branco
-  document.getElementById('laudo_img_procedimento').src = dados.imgProcedimentos || ''; // Se não houver imagem, deixa em branco
-  document.getElementById('laudo_img_conclusao').src = dados.imgConclusao || ''; // Se não houver imagem, deixa em branco
-
-  // Chama a função gerarPDF após 2 segundos
-  setTimeout(gerarPDF, 2000);
-} else {
-  alert('Nenhum dado encontrado!');
-}
-
-function gerarPDF() {
-  const { jsPDF } = window.jspdf;
-  const content = document.getElementById('conteudo');
-
-  html2canvas(content, { scale: 3 }).then(canvas => {
-    const imgData = canvas.toDataURL('image/png');
-
-    const imgWidth = 210; // Largura A4 em mm
-    const imgProps = canvas.width / canvas.height;
-    const pdfHeight = imgWidth / imgProps;
-
-    const pdf = new jsPDF('p', 'mm', [imgWidth, pdfHeight]);
-
-    pdf.addImage(imgData, 'PNG', 0, 0, imgWidth, pdfHeight);
-    pdf.save("laudo-tecnico.pdf");
-  });
-};
-</script>
-
+  // Recupera os dados do localStorage
+ const dados = JSON.parse(localStorage.getItem('dadosLaudo'));
+ 
+ if (dados) {
+   document.getElementById('laudo_oficina').textContent = `Oficina: ${dados.nomeOficina}`;
+   document.getElementById('laudo_tecnico').textContent = `Técnico: ${dados.nomeTecnico}`;
+   document.getElementById('laudo_modelo').textContent = `Modelo: ${dados.modeloVeiculo}`;
+   document.getElementById('laudo_tipo').textContent = `Tipo: ${dados.tipoVeiculo}`;
+   document.getElementById('laudo_tensao').textContent = `Tensão: ${dados.tensao}`;
+   document.getElementById('laudo_capacidade').textContent = `Capacidade: ${dados.capacidade}`;
+   document.getElementById('laudo_descrição').textContent = dados.descricao;
+   document.getElementById('laudo_preparacao').textContent = dados.preparacao;
+   document.getElementById('laudo_teste').textContent = dados.teste;
+   document.getElementById('laudo_procedimento').textContent = dados.procedimentos;
+   document.getElementById('laudo_conclusao').textContent = dados.conclusao;
+   document.getElementById('laudo_whatsapp').textContent = `${dados.whatsapp}`;
+   document.getElementById('laudo_telefone').textContent = `${dados.telefone}`;
+   document.getElementById('laudo_email').textContent = `${dados.email}`;
+ 
+   // Incluindo os dados do endereço
+   document.getElementById('laudo_endereco').textContent = `${dados.endereco.rua}, ${dados.endereco.numero} - ${dados.endereco.cidade}, ${dados.endereco.estado}`;
+ 
+   // Define as imagens
+   document.getElementById('laudo_img_logo1').src = dados.logoOficina || ''; // Se não houver imagem, deixa em branco
+   document.getElementById('laudo_img_logo2').src = dados.logoOficina || ''; // Se não houver imagem, deixa em branco
+   document.getElementById('laudo_img_preparacao').src = dados.imgPreparacao || ''; // Se não houver imagem, deixa em branco
+   document.getElementById('laudo_img_teste').src = dados.imgTeste || ''; // Se não houver imagem, deixa em branco
+   document.getElementById('laudo_img_procedimento').src = dados.imgProcedimentos || ''; // Se não houver imagem, deixa em branco
+   document.getElementById('laudo_img_conclusao').src = dados.imgConclusao || ''; // Se não houver imagem, deixa em branco
+ 
+   // Chama a função gerarPDF após 2 segundos
+   setTimeout(gerarPDF, 2000);
+ } else {
+   alert('Nenhum dado encontrado!');
+ }
+ 
+ function gerarPDF() {
+   const { jsPDF } = window.jspdf;
+   const content = document.getElementById('conteudo');
+ 
+   html2canvas(content, { scale: 3 }).then(canvas => {
+     const imgData = canvas.toDataURL('image/png');
+ 
+     const imgWidth = 210; // Largura A4 em mm
+     const imgProps = canvas.width / canvas.height;
+     const pdfHeight = imgWidth / imgProps;
+ 
+     const pdf = new jsPDF('p', 'mm', [imgWidth, pdfHeight]);
+ 
+     pdf.addImage(imgData, 'PNG', 0, 0, imgWidth, pdfHeight);
+     pdf.save("laudo-tecnico.pdf");
+   });
+ };
+ </script> 
 
 
 
